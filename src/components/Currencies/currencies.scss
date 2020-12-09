@@ -1,0 +1,26 @@
+@use 'src/styles/vars';
+
+.currencies {
+  padding-top: 20px;
+  background-color: vars.$color-light;
+  max-height: 250px;
+  overflow-y: scroll;
+
+  &__name {
+    // je veux pas que le texte puisse être s
+    user-select: none;
+    border-bottom: 1px solid vars.$color-alt;
+    padding: vars.$gutter;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color vars.$transition-normal;
+
+    // comme si j'avais écrit
+    // .currencies__name:hover
+    &:hover {
+      transition: vars.$transition-fast;
+      background-color: vars.$color-alt;
+    }
+
+  }
+}

@@ -1,0 +1,32 @@
+@use 'src/styles/vars';
+
+.header {
+  background-color: vars.$color;
+  color: vars.$color-light;
+  padding: vars.$gutter * 3 0;
+  text-align: center;
+
+  &__title {
+    font-size: 2em;
+    font-weight: 700;
+  }
+
+  &__amount {
+    display: none;
+    margin-top: vars.$gutter;
+    font-size: 1.3em;
+  }
+
+  &__input {
+    background-color: vars.$color-alt;
+    color: white;
+    border: 2px solid white;
+    display: block;
+    margin: 1rem 5% 0 5%;
+    width: 90%;
+    font-size: 1.3em;
+    border-radius: 5px;
+    padding: 0.6rem;
+  }
+}
+
